@@ -1,0 +1,11 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf320
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Task9-Refactoring: Creating a Local Variable from Repeated Code\
+\
+This was a very useful refactoring option. I often times repeat the same expression instead of creating a local variable. This is a bad design smell because there is repeated code, but the expression is execute each time. Creating this local variable is much more maintainable because the expression is executed just once and each other time it is used, it is just a reference.\
+\
+To my knowledge, I don't see why this would be a problem for any situation. The only thing I can think of is that the extracted string is just a reference, and I've had prelims in the passed dealing with objects I thought were truly a new object rather than just a reference. This has caused me to modify the original object when I thought I was just modifying the cloned, or local variable.}

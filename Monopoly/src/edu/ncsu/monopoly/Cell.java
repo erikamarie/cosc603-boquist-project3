@@ -1,11 +1,15 @@
 package edu.ncsu.monopoly;
 
-public abstract class Cell {
+public abstract class Cell implements IOwnable {
 	private String name;
 	protected Player theOwner;//this is the class variable that was changed
 	private boolean available = true;
 	
 
+	/* (non-Javadoc)
+	 * @see edu.ncsu.monopoly.IOwnable#getName()
+	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -14,6 +18,10 @@ public abstract class Cell {
 		return theOwner;
 	}
 	
+	/* (non-Javadoc)
+	 * @see edu.ncsu.monopoly.IOwnable#getPrice()
+	 */
+	@Override
 	public int getPrice() {
 		return 0;
 	}
@@ -32,6 +40,10 @@ public abstract class Cell {
         return name;
     }
 
+	/* (non-Javadoc)
+	 * @see edu.ncsu.monopoly.IOwnable#isAvailable()
+	 */
+	@Override
 	public boolean isAvailable() {
 		return available;
 	}

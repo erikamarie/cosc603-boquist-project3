@@ -1,0 +1,26 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf320
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Task11- Summing it All Up\
+\
+\ul What I Learned \
+\ulnone I thought this was a really great project. In fact, when I mentioned it to some coworkers they were excited for me to bring back ideas on how we can benefit from the tools Eclipse provides. And we could certainly use a lot of refactoring! All of the refactoring tools I thought to be quite useful, I'll have to delve deeper into the extracting an interface portion though, I'm still not quite sure I understand it completely.\
+\
+As far as class topic relation, this project directly relates to the design smells and refactoring discussions we had. The tools provided for refactoring made the entire notion of refactoring less scary. I was quite sure how we could alleviate all those smells efficiently, but there's a button for that! \
+\
+JUnit testing I though worked very great. I'm familiar with qUnit for testing units of javascript, but in that case it was a web-based unit test, this integration of jUnit into Eclipse worked great and I thought it very useful.\
+\
+\ul What I Liked\
+\ulnone I really liked the refactoring options Eclipse provided. A lot of it was really intuitive, and I'm curious to see how many other tools Eclipse provides, not just for refactoring. \
+\
+Strengths of these refactoring tools are that they do a lot of the work that one would normally have to do manually. The preview options can help one seem just how much one change could impact everything else. The fact that the undo or ctrl-Z option works even after refactoring is awesome, but it's true that in some cases push-down and pull-up can do the same thing, and you can see just how the change affects everything else.\
+\
+Weaknesses are that while refactoring occurs automagically to a certain extent, one has to check the work and make sure nothing was missed. In the case of changing the method signatures, I just fixed the methods to return true, without it being used or carefully thought out, I was basically just getting rid of those pesky errors. This is careless and could cause problems in the future. That being said everything that is auto automated HAS to be reviewed, and reviewing can be a timely effort.\ul \
+\
+How/Why to Unit Test\
+\ulnone I really and a strong believer in unit testing. It's a quick and easy way to verify that your changes in a small section of code don't break that section and thus the entire project. For this project it was great to purposely cause an error and see how jUnit reacts. I think jUnit will be a vital source of information for future projects in this class.\
+\
+Specifically for refactoring, jUnit provides support in verifying that our refactoring changes didn't break anything else. Especially in the case of using a tool to, for instance, find and replace words, there could be changes that should or shouldn't have been made that you might not otherwise realize had broke if it wasn't for running your jUnit tests.}
